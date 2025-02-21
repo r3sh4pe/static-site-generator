@@ -1,5 +1,7 @@
 import unittest
+
 from htmlnode import HTMLNode
+
 
 class TestHTMLNodeBehavior(unittest.TestCase):
     def test_repr_includes_all_attributes(self):
