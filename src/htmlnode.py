@@ -13,6 +13,8 @@ class HTMLNode:
         if self.props is None:
             return html_props
         for k, v in self.props.items():
+            if k is None or v is None:
+                continue
             html_props += f" {k}=\"{v}\""
         return html_props
 
