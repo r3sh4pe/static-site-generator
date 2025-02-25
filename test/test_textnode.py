@@ -1,10 +1,10 @@
 # test_textnode.py
 import unittest
 
-from textnode import TextNode, TextType
+from src.textnode import TextNode, TextType
 
 
-class Testtest(unittest.TestCase):
+class TestTextNodeBehavior(unittest.TestCase):
     def test_eq(self):
         node = TextNode("This is a text node", TextType.BOLD)
         node2 = TextNode("This is a text node", TextType.BOLD)
@@ -50,7 +50,3 @@ class Testtest(unittest.TestCase):
     def test_with_url(self):
         node = TextNode("Hello", TextType.LINK, "http://example.com")
         self.assertEqual(node.url, "http://example.com")
-
-
-if __name__ == "__main__":
-    unittest.main()
