@@ -494,3 +494,6 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,jetbrains+all,pycharm+all,pycharm,jetbrains,python
+
+./public/
+/public/
